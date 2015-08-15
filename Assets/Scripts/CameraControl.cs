@@ -39,7 +39,6 @@ public class CameraControl : MonoBehaviour {
 			Vector3 cameraDesiredMove = GetDesiredTranslation();
 			if(!isDesiredPositionOverBoundries(cameraDesiredMove)){
 				this.transform.Translate(cameraDesiredMove);
-				Debug.Log(cameraDesiredMove);
 			}
 		}
 	}
