@@ -1,0 +1,82 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 15.08.2015 12:04:59
+
+newmtl bp_top
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.588000 0.588000 0.588000
+	map_Ka C:\Users\Andor\Desktop\Project brake\Vehicles\BRDM-2\BP\Top.png
+	map_Kd C:\Users\Andor\Desktop\Project brake\Vehicles\BRDM-2\BP\Top.png
+
+newmtl bp_side
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.588000 0.588000 0.588000
+	map_Ka C:\Users\Andor\Desktop\Project brake\Vehicles\BRDM-2\BP\Side.png
+	map_Kd C:\Users\Andor\Desktop\Project brake\Vehicles\BRDM-2\BP\Side.png
+
+newmtl bp_front
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.588000 0.588000 0.588000
+	map_Ka C:\Users\Andor\Desktop\Project brake\Vehicles\BRDM-2\BP\Front.png
+	map_Kd C:\Users\Andor\Desktop\Project brake\Vehicles\BRDM-2\BP\Front.png
+
+newmtl bp_rear
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.588000 0.588000 0.588000
+	map_Ka C:\Users\Andor\Desktop\Project brake\Vehicles\BRDM-2\BP\Back.png
+	map_Kd C:\Users\Andor\Desktop\Project brake\Vehicles\BRDM-2\BP\Back.png
+
+newmtl Body
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.313726 0.247059 0.188235
+	Kd 0.313726 0.247059 0.188235
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
+
+newmtl Material__161
+	Ns 10.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.047059 0.047059 0.047059
+	Kd 0.047059 0.047059 0.047059
+	Ks 0.000000 0.000000 0.000000
+	Ke 0.000000 0.000000 0.000000
