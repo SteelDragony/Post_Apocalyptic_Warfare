@@ -87,7 +87,6 @@ public class CameraControl : MonoBehaviour {
 	}
 
 	public bool isDesiredPositionOverBoundries(Vector3 desiredPosition){
-		Debug.Log (cameraLimits.LeftLimit);
 		if ((this.transform.position.x + desiredPosition.x) < cameraLimits.LeftLimit)
 			return true;
 		if ((this.transform.position.x + desiredPosition.x) > cameraLimits.RightLimit)
