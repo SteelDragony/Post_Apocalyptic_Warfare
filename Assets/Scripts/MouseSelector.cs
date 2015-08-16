@@ -27,6 +27,13 @@ public class MouseSelector : MonoBehaviour {
 				if(Input.GetMouseButtonUp(0) && DidUserClickLeftMouse(mouseDownPoint)){
 					DeselectGameobjectIfSelected();
 				}
+				else if(Input.GetMouseButtonUp(1) && DidUserClickLeftMouse(mouseDownPoint) && currentlySelectedUnit != null){
+					if(currentlySelectedUnit.transform.GetComponent<ASTAR_AI>() != null){
+						currentlySelectedUnit.transform.GetComponent<ASTAR_AI>().target = hit.point;
+					}else{
+						currentlySelectedUnit.transform.GetComponent<UnitMove>().target = hit.point;
+					}
+				}
 			}
 			else {
 				if(Input.GetMouseButtonUp(0) && DidUserClickLeftMouse(mouseDownPoint)){
