@@ -46,6 +46,9 @@ public class MouseSelector : MonoBehaviour {
 				mouseDownPoint = hit.point;
 				timeLeft = beforeDragLimit;
 				dragStart = Input.mousePosition;
+				if (!isShiftDown ()) {
+					DeselectGameobjectsIfSelected();
+				}
 			} else if(Input.GetMouseButton(0)){
 				if(!isDragging){
 					timeLeft -= Time.deltaTime;
@@ -266,9 +269,7 @@ public class MouseSelector : MonoBehaviour {
 	}
 
 	public static void selectDraggedUnits(){
-		if (!isShiftDown ()) {
-			DeselectGameobjectsIfSelected();
-		}
+
 		if (unitsInDrag.Count > 0) {
 			for(int i = 0;i < unitsInDrag.Count;i++){
 				GameObject unitObj = unitsInDrag[i] as GameObject;
