@@ -25,7 +25,7 @@ public class UnitFire1 : MonoBehaviour {
 	void Start () {
 		gunLine = GetComponentInChildren<LineRenderer>();
 		gunLight = GetComponentInChildren<Light>();
-		barrelEnd = transform.FindChild("Turret").FindChild("Gunall").FindChild("GunMuzzle");
+		barrelEnd = transform.FindChild("Turret").FindChild("Gun").FindChild("GunMuzzle");
 		turret = transform.FindChild("Turret").gameObject;
 		unitHealth = GetComponent<UnitHealth>();
 	}

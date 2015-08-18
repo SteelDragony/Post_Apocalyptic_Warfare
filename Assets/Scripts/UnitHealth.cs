@@ -15,6 +15,8 @@ public class UnitHealth : MonoBehaviour {
 	void Update () {
 		if (health <=0)
 		{
+			MouseSelector.removeFromOnScreenUnits(this.gameObject);
+			MouseSelector.removeUnitFromArray(this.gameObject);
 			Destroy(gameObject);
 		}
 	}

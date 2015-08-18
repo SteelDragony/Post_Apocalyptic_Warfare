@@ -41,12 +41,13 @@ public class CameraControl : MonoBehaviour {
 			Vector3 cameraDesiredMove = GetDesiredTranslation();
 			if(!isDesiredPositionOverBoundries(cameraDesiredMove)){
 				this.transform.Translate(cameraDesiredMove);
+//				this.transform.position = Vector3.Lerp(this.transform.position, this.transform.position + cameraDesiredMove, 1);
 			}
 		}
 	}
 
 	public bool CheckIfUserCameraInput(){
-		if (CameraControl.AreWASDKeysPressed () || CameraControl.IsMousePositionWithinBoundries() || Input.GetMouseButton(2))
+		if (CameraControl.AreWASDKeysPressed () || CameraControl.IsMousePositionWithinBoundries() || Input.GetMouseButton(2) || Input.mouseScrollDelta.y != 0)
 			return true;
 		else
 			return false;
@@ -56,7 +57,7 @@ public class CameraControl : MonoBehaviour {
 		float moveSpeed = cameraMoveSpeed * Time.deltaTime;
 		float desiredX = 0f;
 		float desiredZ = 0f;
-
+		float desiredY = 0f;
 		if (Input.GetKey (KeyCode.W))
 			desiredZ = moveSpeed;
 
@@ -89,36 +90,16 @@ public class CameraControl : MonoBehaviour {
 		{
 			mouseDragStart = Input.mousePosition;
 		}
-		/*
-		if(Input.GetMouseButton(2))
-		{
-//			if(Input.mousePosition.x > mouseDragStart.x)
-//			{
-//				desiredX = moveSpeed;
-//			}
-//			if(Input.mousePosition.x < mouseDragStart.x)
-//			{
-//				desiredX = -moveSpeed;
-//			}
-//			if(Input.mousePosition.y > mouseDragStart.y)
-//			{
-//				desiredZ = moveSpeed;
-//			}
-//			if(Input.mousePosition.y < mouseDragStart.y)
-//			{
-//				desiredZ = -moveSpeed;
-//			}
-			Vector3 movedir = (Input.mousePosition - mouseDragStart).normalized;
-			desiredX = movedir.x * moveSpeed;
-			desiredZ = movedir.y * moveSpeed;
-		}*/
+
 		if(Input.GetMouseButton(2))
 		{
 			desiredX = mouseDragStart.x - Input.mousePosition.x;
 			desiredZ = mouseDragStart.y - Input.mousePosition.y;
 			mouseDragStart = Input.mousePosition;
 		}
-		return new Vector3 (desiredX, 0, desiredZ);
+		desiredY = -Input.mouseScrollDelta.y;
+		Debug.Log(desiredY);
+		return new Vector3 (desiredX, desiredY, desiredZ);
 	}
 
 	public bool isDesiredPositionOverBoundries(Vector3 desiredPosition){
