@@ -4,7 +4,9 @@ using Pathfinding;
 
 public class ASTAR_AI : MonoBehaviour {
 
-	public Transform target;
+	//public Transform target;
+	public Vector3 target;
+
 	public float speed = 10f;
 
 	Seeker seeker;
@@ -16,7 +18,8 @@ public class ASTAR_AI : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		seeker = GetComponent<Seeker> ();
-		seeker.StartPath (transform.position, target.position, OnPathComplete);
+		//seeker.StartPath (transform.position, target.position, OnPathComplete);
+		seeker.StartPath (transform.position, target, OnPathComplete);
 		charController = GetComponent<CharacterController>();
 	}
 
