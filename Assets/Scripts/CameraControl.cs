@@ -17,6 +17,8 @@ public class CameraControl : MonoBehaviour {
 	private float cameraMoveSpeed = 60f;
 	private float mouseBoundary = 25f;
 
+	Vector3 mouseDragStart;
+
 	void Awake(){
 		Instance = this;
 	}
@@ -44,7 +46,7 @@ public class CameraControl : MonoBehaviour {
 	}
 
 	public bool CheckIfUserCameraInput(){
-		if (CameraControl.AreWASDKeysPressed () || CameraControl.IsMousePositionWithinBoundries())
+		if (CameraControl.AreWASDKeysPressed () || CameraControl.IsMousePositionWithinBoundries() || Input.GetMouseButton(2))
 			return true;
 		else
 			return false;
@@ -83,6 +85,39 @@ public class CameraControl : MonoBehaviour {
 			desiredZ = moveSpeed;
 		}
 
+		if(Input.GetMouseButtonDown(2))
+		{
+			mouseDragStart = Input.mousePosition;
+		}
+		/*
+		if(Input.GetMouseButton(2))
+		{
+//			if(Input.mousePosition.x > mouseDragStart.x)
+//			{
+//				desiredX = moveSpeed;
+//			}
+//			if(Input.mousePosition.x < mouseDragStart.x)
+//			{
+//				desiredX = -moveSpeed;
+//			}
+//			if(Input.mousePosition.y > mouseDragStart.y)
+//			{
+//				desiredZ = moveSpeed;
+//			}
+//			if(Input.mousePosition.y < mouseDragStart.y)
+//			{
+//				desiredZ = -moveSpeed;
+//			}
+			Vector3 movedir = (Input.mousePosition - mouseDragStart).normalized;
+			desiredX = movedir.x * moveSpeed;
+			desiredZ = movedir.y * moveSpeed;
+		}*/
+		if(Input.GetMouseButton(2))
+		{
+			desiredX = mouseDragStart.x - Input.mousePosition.x;
+			desiredZ = mouseDragStart.y - Input.mousePosition.y;
+			mouseDragStart = Input.mousePosition;
+		}
 		return new Vector3 (desiredX, 0, desiredZ);
 	}
 
