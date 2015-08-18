@@ -23,6 +23,8 @@ public class MouseSelector : MonoBehaviour {
 
 	private static float clickMargin = 1.3f;
 
+	private float unitSpacing = 6f;
+
 	private float boxWidth;
 	private float boxHeight;
 	private float boxTop;
@@ -72,13 +74,28 @@ public class MouseSelector : MonoBehaviour {
 						DeselectGameobjectsIfSelected();
 					}
 					else if(Input.GetMouseButtonUp(1) &&/* DidUserClickLeftMouse(hit.point) &&*/ currentlySelectedUnits.Count > 0){
-						Debug.Log("help");
+						GameObject waypoint = new GameObject();
+						waypoint.transform.position = hit.point;
+						int root = Mathf.CeilToInt(Mathf.Sqrt(currentlySelectedUnits.Count));
+						if(currentlySelectedUnits.Count <= 3)
+							root = currentlySelectedUnits.Count;
 						for(int i = 0; i < currentlySelectedUnits.Count; i++){
+
 							GameObject unit = currentlySelectedUnits[i] as GameObject;
+							if(i == Mathf.FloorToInt(currentlySelectedUnits.Count/2)){
+								waypoint.transform.rotation = Quaternion.LookRotation((waypoint.transform.position - unit.transform.position).normalized);
+							}
+							UnitMove unitScript = unit.transform.GetComponent<UnitMove>();
+							GameObject position = new GameObject();
+							position.transform.SetParent(waypoint.transform);
+							position.transform.localPosition = new Vector3(((i % root) * unitSpacing) - (((root - 1) * unitSpacing) / 2),
+																	  0,
+																	  Mathf.FloorToInt( i / root ) * unitSpacing) * -1;
 							if(unit.transform.GetComponent<ASTAR_AI>() != null){
 								unit.transform.GetComponent<ASTAR_AI>().target = hit.point;
 							}else{
-								unit.transform.GetComponent<UnitMove>().target = hit.point;
+
+								unit.transform.GetComponent<UnitMove>().target = position.transform;
 							}
 						}
 					}
