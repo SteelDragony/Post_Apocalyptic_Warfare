@@ -57,8 +57,6 @@ public class MouseSelector : MonoBehaviour {
 					if(timeLeft <= 0f || IsDraggingByPosition(dragStart,Input.mousePosition)){
 						isDragging = true;
 					}
-				} else {
-					Debug.Log("Is dragging");
 				}
 			} else if(Input.GetMouseButtonUp(0)){
 				if(isDragging){
@@ -79,25 +77,23 @@ public class MouseSelector : MonoBehaviour {
 						int root = Mathf.CeilToInt(Mathf.Sqrt(currentlySelectedUnits.Count));
 						if(currentlySelectedUnits.Count <= 3)
 							root = currentlySelectedUnits.Count;
+						GameObject tempUnit = currentlySelectedUnits[Mathf.FloorToInt(currentlySelectedUnits.Count/2)] as GameObject;
+						waypoint.transform.rotation = Quaternion.LookRotation((waypoint.transform.position - tempUnit.transform.position).normalized);
 						for(int i = 0; i < currentlySelectedUnits.Count; i++){
-
 							GameObject unit = currentlySelectedUnits[i] as GameObject;
-							if(i == Mathf.FloorToInt(currentlySelectedUnits.Count/2)){
-								waypoint.transform.rotation = Quaternion.LookRotation((waypoint.transform.position - unit.transform.position).normalized);
-							}
-							UnitMove unitScript = unit.transform.GetComponent<UnitMove>();
-							GameObject position = new GameObject();
-							position.transform.SetParent(waypoint.transform);
-							position.transform.localPosition = new Vector3(((i % root) * unitSpacing) - (((root - 1) * unitSpacing) / 2),
+							//UnitMove unitScript = unit.transform.GetComponent<UnitMove>();
+							GameObject formationPosition = new GameObject();
+							formationPosition.transform.SetParent(waypoint.transform);
+							formationPosition.transform.localPosition = new Vector3(((i % root) * unitSpacing) - (((root - 1) * unitSpacing) / 2),
 																	  0,
 																	  Mathf.FloorToInt( i / root ) * unitSpacing) * -1;
 							if(unit.transform.GetComponent<ASTAR_AI>() != null){
 								unit.transform.GetComponent<ASTAR_AI>().target = hit.point;
 							}else{
-
-								unit.transform.GetComponent<UnitMove>().target = position.transform;
+								unit.transform.GetComponent<UnitMove>().target = formationPosition.transform.position;
 							}
 						}
+						Destroy(waypoint);
 					}
 				}
 				else {
