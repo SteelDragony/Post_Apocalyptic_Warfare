@@ -50,7 +50,6 @@ GameObject:
   - 114: {fileID: 11494860}
   - 54: {fileID: 5469370}
   - 65: {fileID: 6595364}
-  - 135: {fileID: 13505200}
   m_Layer: 9
   m_Name: BRDM2 V3
   m_TagString: Unit
@@ -160,6 +159,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &196750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 478432}
+  - 135: {fileID: 13550376}
+  m_Layer: 10
+  m_Name: TargetingSphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &403230
 Transform:
   m_ObjectHideFlags: 1
@@ -209,6 +224,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 494668}
   m_RootOrder: 4
+--- !u!4 &478432
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 494668}
+  m_RootOrder: 6
 --- !u!4 &487340
 Transform:
   m_ObjectHideFlags: 1
@@ -249,6 +276,7 @@ Transform:
   - {fileID: 489204}
   - {fileID: 477498}
   - {fileID: 440220}
+  - {fileID: 478432}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &498756
@@ -608,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c99eb78ff2af0e4d90b8342a5d14833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
 --- !u!119 &11985838
 Projector:
   m_ObjectHideFlags: 1
@@ -664,12 +692,12 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294967295
   m_UseWorldSpace: 1
---- !u!135 &13505200
+--- !u!135 &13550376
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 120250}
+  m_GameObject: {fileID: 196750}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -702,7 +730,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 120250}

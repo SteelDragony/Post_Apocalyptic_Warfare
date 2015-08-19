@@ -98,7 +98,7 @@ public class CameraControl : MonoBehaviour {
 			mouseDragStart = Input.mousePosition;
 		}
 		desiredY = -Input.mouseScrollDelta.y;
-		Debug.Log(desiredY);
+		//Debug.Log(desiredY);
 		return new Vector3 (desiredX, desiredY, desiredZ);
 	}
 

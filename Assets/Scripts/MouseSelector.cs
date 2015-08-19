@@ -40,7 +40,7 @@ public class MouseSelector : MonoBehaviour {
 	
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
-		if (Physics.Raycast (ray, out hit, Mathf.Infinity)) {
+		if (Physics.Raycast (ray, out hit, 500)) {
 
 			currentMousePoint = hit.point;
 
@@ -67,11 +67,14 @@ public class MouseSelector : MonoBehaviour {
 			}
 
 			if(!isDragging){
+				Debug.Log(hit.collider.name);
 				if(hit.collider.name == "Terrain"){
+
 					if(Input.GetMouseButtonUp(0) && DidUserClickLeftMouse(hit.point)){
 						DeselectGameobjectsIfSelected();
 					}
-					else if(Input.GetMouseButtonUp(1) &&/* DidUserClickLeftMouse(hit.point) &&*/ currentlySelectedUnits.Count > 0){
+					if(Input.GetMouseButtonUp(1) &&/* DidUserClickLeftMouse(hit.point) &&*/ currentlySelectedUnits.Count > 0){
+						Debug.Log("deze");
 						GameObject waypoint = new GameObject();
 						waypoint.transform.position = hit.point;
 						int root = Mathf.CeilToInt(Mathf.Sqrt(currentlySelectedUnits.Count));
@@ -98,7 +101,9 @@ public class MouseSelector : MonoBehaviour {
 				}
 				else {
 					if(Input.GetMouseButtonUp(0) && DidUserClickLeftMouse(hit.point)){
+
 						if(hit.collider.transform.FindChild("Selected")){
+
 							if(!isUnitSelected(hit.collider.gameObject)){
 
 								if(!isShiftDown())
