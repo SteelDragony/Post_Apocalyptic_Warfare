@@ -67,14 +67,14 @@ public class MouseSelector : MonoBehaviour {
 			}
 
 			if(!isDragging){
-				Debug.Log(hit.collider.name);
+				//Debug.Log(hit.collider.name);
 				if(hit.collider.name == "Terrain"){
 
 					if(Input.GetMouseButtonUp(0) && DidUserClickLeftMouse(hit.point)){
 						DeselectGameobjectsIfSelected();
 					}
 					if(Input.GetMouseButtonUp(1) &&/* DidUserClickLeftMouse(hit.point) &&*/ currentlySelectedUnits.Count > 0){
-						Debug.Log("deze");
+						//Debug.Log("deze");
 						GameObject waypoint = new GameObject();
 						waypoint.transform.position = hit.point;
 						int root = Mathf.CeilToInt(Mathf.Sqrt(currentlySelectedUnits.Count));
