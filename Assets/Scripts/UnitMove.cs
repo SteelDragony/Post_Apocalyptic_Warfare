@@ -9,6 +9,7 @@ public class UnitMove : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		target = transform.position;
 		nav = GetComponent <NavMeshAgent> ();
 	}
 	
