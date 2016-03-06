@@ -93,9 +93,8 @@ public class CameraControl : MonoBehaviour {
 
 		if(Input.GetMouseButton(2))
 		{
-			desiredX = mouseDragStart.x - Input.mousePosition.x;
-			desiredZ = mouseDragStart.y - Input.mousePosition.y;
-			mouseDragStart = Input.mousePosition;
+			desiredX = -Input.GetAxis("Mouse X");
+			desiredZ = -Input.GetAxis("Mouse Y");
 		}
 		desiredY = -Input.mouseScrollDelta.y;
 		//Debug.Log(desiredY);

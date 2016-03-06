@@ -2,38 +2,39 @@ Initialize engine version: 5.1.1f1 (2046fc06d4d8)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Renderer: NVIDIA GeForce GT 555M     (ID=0x1247)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
+    VRAM:     2000 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.142 seconds
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.793 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Dragony\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\System.dll (this message is harmless)
 Shader 'Nature/Terrain/Specular': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Specular-Base' not found
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2564 -> priority: 1 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 8d3c -> priority: 1 
+  Thread -> id: 7dfc -> priority: 1 
 ConnectingToNameServer
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
@@ -59,6 +60,83 @@ JoinedLobby
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
 Create Room
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ConnectingToGameserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Authenticating
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Joining
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Joined
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 555M     (ID=0x1247)
+    Vendor:   NVIDIA
+    VRAM:     2000 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.078 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Matthijs\Documents\Post_Apocalyptic_Warfare\Builds\FirstMultiplayer_Data\Managed\System.dll (this message is harmless)
+Shader 'Nature/Terrain/Specular': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Specular-Base' not found
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 9130 -> priority: 1 
+  Thread -> id: 931c -> priority: 1 
+ConnectingToNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Authenticating
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ConnectingToMasterserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+Authenticating
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+ConnectedToMaster
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
+
+JoinedLobby
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 65)
 
