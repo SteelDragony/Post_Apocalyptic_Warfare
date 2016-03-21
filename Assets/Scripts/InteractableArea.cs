@@ -6,12 +6,14 @@ public class InteractableArea : MonoBehaviour {
 
     public List<string> dialogueTexts = new List<string>();
     public List<DialogueOption> dialogueOptions = new List<DialogueOption>();
-
+    public int numberOfDialogue = 0;
 
 	// Use this for initialization
 	void Start () {
+        
         dialogueTexts.Add("You encounter a city");
         dialogueTexts.Add("You found some ammo");
+        /*
         DialogueOption scavenge = new DialogueOption();
         DialogueOption leave = new DialogueOption();
         leave.buttonText = "leave";
@@ -23,7 +25,7 @@ public class InteractableArea : MonoBehaviour {
         scavenge.dialogueOptions.Add(succes);
         dialogueOptions.Add(scavenge);
         dialogueOptions.Add(leave);
-        
+        */
 	}
 	
 	// Update is called once per frame
@@ -38,5 +40,15 @@ public class InteractableArea : MonoBehaviour {
         encounter.Encounter(dialogueTexts, dialogueOptions);
     }
 
+    public void AddDialogueOption()
+    {
+        DialogueOption option = new DialogueOption();
+        dialogueOptions.Add(option);
+    }
 
+    public void RemoveDialogueOption()
+    {
+        DialogueOption option = dialogueOptions[dialogueOptions.Count - 1];
+        dialogueOptions.Remove(dialogueOptions[dialogueOptions.Count - 1]);
+    }
 }

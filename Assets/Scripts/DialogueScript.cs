@@ -50,7 +50,10 @@ public class DialogueScript : MonoBehaviour {
         if (dialogueOption.dialogueOptions.Count != 0)
         {
             print("foundOption");
-            AddDialogueOption(dialogueOption.dialogueOptions[0]);
+            foreach (DialogueOption i in dialogueOption.dialogueOptions)
+            {
+                AddDialogueOption(i);
+            }
         }
     }
 }
