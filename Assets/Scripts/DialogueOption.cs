@@ -7,9 +7,8 @@ using System;
 public class DialogueOption{
 
     public string buttonText = "Scavenge";
-    public string resultText = "You found some ammo";
+    public string dialogueText = "You found some ammo";
     public int ammoReward = 0;
-    public bool endDialogue = false;
     public int numberOfDialogue = 0;
     public List<DialogueOption> dialogueOptions = new List<DialogueOption>();
 

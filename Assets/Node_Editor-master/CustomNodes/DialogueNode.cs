@@ -25,8 +25,7 @@ public class DialogueNode : Node {
 
     protected internal override void NodeGUI()
     {
-        option.resultText = GUILayout.TextArea(option.resultText);
-        option.endDialogue = GUILayout.Toggle(option.endDialogue, new GUIContent("Ends dialogue", "Check if this dialogue option should end the dialogue tree"));
+        option.dialogueText = GUILayout.TextArea(option.dialogueText);
 
         GUILayout.BeginHorizontal();
         GUILayout.BeginVertical();

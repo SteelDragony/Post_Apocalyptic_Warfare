@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 11419460}
-  - {fileID: 11442584}
   - {fileID: 11420254}
+  - {fileID: 11442584}
 --- !u!114 &11414970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28,7 +28,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 11420254}
   side: 2
-  sidePosition: 20
+  sidePosition: 49
   sideOffset: 0
   connections: []
   type: DialogueOption
@@ -56,6 +56,12 @@ MonoBehaviour:
   - {fileID: 11484930}
   Outputs:
   - {fileID: 11453376}
+  option:
+    buttonText: Scavenge
+    dialogueText: You found some ammo
+    ammoReward: 0
+    numberOfDialogue: 0
+    dialogueOptions: []
 --- !u!114 &11420254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,6 +86,12 @@ MonoBehaviour:
   - {fileID: 11451358}
   Outputs:
   - {fileID: 11414970}
+  option:
+    buttonText: Scavenge
+    dialogueText: You found some ammo
+    ammoReward: 0
+    numberOfDialogue: 0
+    dialogueOptions: []
 --- !u!114 &11442584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,6 +116,12 @@ MonoBehaviour:
   - {fileID: 11482098}
   Outputs:
   - {fileID: 11498844}
+  option:
+    buttonText: Scavenge
+    dialogueText: You found some ammo
+    ammoReward: 0
+    numberOfDialogue: 0
+    dialogueOptions: []
 --- !u!114 &11451358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 11420254}
   side: 4
-  sidePosition: 20
+  sidePosition: 49
   sideOffset: 0
   connection: {fileID: 0}
   type: DialogueOption
@@ -134,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 11419460}
   side: 2
-  sidePosition: 67
+  sidePosition: 49
   sideOffset: 0
   connections: []
   type: DialogueOption
@@ -151,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 11442584}
   side: 4
-  sidePosition: 80
+  sidePosition: 49
   sideOffset: 0
   connection: {fileID: 0}
   type: DialogueOption
@@ -168,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 11419460}
   side: 4
-  sidePosition: 67
+  sidePosition: 49
   sideOffset: 0
   connection: {fileID: 11498844}
   type: DialogueOption
@@ -188,7 +206,7 @@ MonoBehaviour:
   drawing: 1
   selectedNode: {fileID: 11442584}
   panOffset: {x: -14, y: 50}
-  zoom: 0.6
+  zoom: 1
 --- !u!114 &11498844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 11442584}
   side: 2
-  sidePosition: 80
+  sidePosition: 49
   sideOffset: 0
   connections:
   - {fileID: 11484930}

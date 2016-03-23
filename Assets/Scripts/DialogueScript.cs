@@ -37,23 +37,33 @@ public class DialogueScript : MonoBehaviour {
 
     public void ClickedButton(DialogueOption dialogueOption)
     {
-        dialogueText.text = dialogueOption.resultText;
-        playerParty.ammonution += dialogueOption.ammoReward;
+        dialogueText.text = dialogueOption.dialogueText;
+        playerParty.inventory.rifleAmmo += dialogueOption.ammoReward;
+        int temp = 0;
+        if (playerParty.inventory.ammo.TryGetValue("rifle", out temp))
+        {
+            temp += dialogueOption.ammoReward;
+        }
+        else
+        {
+            print("failed to find rifle ammo in inventory");
+        }
         foreach (Button button in buttons)
         {
             print(button);
             Destroy(button.gameObject);
         }
         buttons.Clear();
-        gameObject.SetActive(!dialogueOption.endDialogue);
-        print(dialogueOption.dialogueOptions.Count);
         if (dialogueOption.dialogueOptions.Count != 0)
         {
-            print("foundOption");
             foreach (DialogueOption i in dialogueOption.dialogueOptions)
             {
                 AddDialogueOption(i);
             }
+        }
+        else
+        {
+            gameObject.SetActive(false);
         }
     }
 }
