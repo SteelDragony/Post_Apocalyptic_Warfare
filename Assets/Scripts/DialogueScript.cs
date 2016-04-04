@@ -17,7 +17,7 @@ public class DialogueScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        Time.timeScale = 0;
 	}
 
     public void SetDialogueText(string dialogue)
@@ -38,16 +38,7 @@ public class DialogueScript : MonoBehaviour {
     public void ClickedButton(DialogueOption dialogueOption)
     {
         dialogueText.text = dialogueOption.dialogueText;
-        playerParty.inventory.rifleAmmo += dialogueOption.ammoReward;
-        int temp = 0;
-        if (playerParty.inventory.ammo.TryGetValue("rifle", out temp))
-        {
-            temp += dialogueOption.ammoReward;
-        }
-        else
-        {
-            print("failed to find rifle ammo in inventory");
-        }
+        playerParty.inventory.ChangeAmmoAmount(Inventory.AmmoTypes.rifle, dialogueOption.ammoReward);
         foreach (Button button in buttons)
         {
             print(button);
@@ -63,6 +54,7 @@ public class DialogueScript : MonoBehaviour {
         }
         else
         {
+            Time.timeScale = 1;
             gameObject.SetActive(false);
         }
     }

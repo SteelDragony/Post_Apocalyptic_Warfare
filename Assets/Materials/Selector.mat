@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Selector
-  m_Shader: {fileID: 4800000, guid: f5505f2b93c98454ebd047364573368a, type: 3}
+  m_Shader: {fileID: 4800000, guid: c0ace1ca4bc0718448acf798c93d52d9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 3000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -32,13 +32,6 @@ Material:
       data:
         first:
           name: _DetailNormalMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _MetallicGlossMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -80,6 +73,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _ShadowTex
         second:
           m_Texture: {fileID: 2800000, guid: d5062293e537d8044883a6b5a170e1e5, type: 3}
@@ -111,7 +111,11 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: .5
+        second: 0.5
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
       data:
         first:
           name: _ZWrite
@@ -119,19 +123,11 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .5
-      data:
-        first:
-          name: _Metallic
-        second: 0
+        second: 0.5
       data:
         first:
           name: _BumpScale
         second: 1
-      data:
-        first:
-          name: _Parallax
-        second: .0199999996
       data:
         first:
           name: _OcclusionStrength
@@ -150,6 +146,10 @@ Material:
         second: 0
       data:
         first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
           name: _InvFade
         second: 1
     m_Colors:
@@ -160,8 +160,8 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .0949052051, g: .602941155, b: .0532007068, a: 1}
+        second: {r: 0.094905205, g: 0.60294116, b: 0.053200707, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+        second: {r: 0.2, g: 0.2, b: 0.2, a: 1}

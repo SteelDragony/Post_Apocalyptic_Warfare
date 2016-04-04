@@ -69,7 +69,7 @@ public class CameraControl : MonoBehaviour {
 
 		if (Input.GetKey (KeyCode.D))
 			desiredX = moveSpeed;
-
+        /*
 		if (Input.mousePosition.x < mouseScrollLimits.LeftLimit) {
 			desiredX = moveSpeed * -1;
 		}
@@ -85,7 +85,7 @@ public class CameraControl : MonoBehaviour {
 		if (Input.mousePosition.y > (Screen.height - mouseScrollLimits.TopLimit)) {
 			desiredZ = moveSpeed;
 		}
-
+        */
 		if(Input.GetMouseButtonDown(2))
 		{
 			mouseDragStart = Input.mousePosition;

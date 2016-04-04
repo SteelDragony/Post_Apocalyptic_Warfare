@@ -28,5 +28,6 @@ public class UnitHealth : MonoBehaviour {
 		Vector3 scrPos = Camera.main.WorldToScreenPoint(this.transform.position);
 		//Sets texture for size, for example, 100x30
 		GUI.DrawTexture(new Rect(scrPos.x - 100/2.0f, Screen.height - scrPos.y - 30/2.0f, health/startHealth * 100, 5), new Texture2D(20, 5), ScaleMode.StretchToFill);
+        
 	}
 }

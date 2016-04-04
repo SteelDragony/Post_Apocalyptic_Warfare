@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
 
+    
     //ammo
     public enum AmmoTypes
     {
@@ -17,48 +19,65 @@ public class Inventory : MonoBehaviour {
         highCaliberCannon,
         grenade
     }
-
-    public Dictionary<string, int> ammo = new Dictionary<string, int>();
-    public int pistolAmmo = 0;
-    public int rifleAmmo = 0;
-    public int hmgAmmo = 0;
-    public int rocketAmmo = 0;
-    public int guidedMissile = 0;
-    public int autocannonAmmo = 0;
-    public int lowCaliberCannonAmmo = 0;
-    public int HighCaliberCannonAmmo = 0;
-    public int grenadeAmmo = 0;
+    public Dictionary<AmmoTypes, int> ammo = new Dictionary<AmmoTypes, int>();
 
     //resources
-    public Dictionary<string, int> resources = new Dictionary<string, int>();
-    public int fuel = 0;
-    public int food = 0;
-    public int water = 0;
-    public int medical = 0;
-    public int scrap = 0;
+
+    public enum ResourceTypes
+    {
+        fuel,
+        food,
+        water,
+        medical,
+        scrap
+    }
+    public Dictionary<ResourceTypes, int> resources = new Dictionary<ResourceTypes, int>();
 
     // Use this for initialization
     void Start () {
         
-        ammo.Add("pistol", 0);
-        ammo.Add("rifle", 0);
-        ammo.Add("hmg", 0);
-        ammo.Add("rocket", 0);
-        ammo.Add("guidedMissile", 0);
-        ammo.Add("pistolautocannon", 0);
-        ammo.Add("lowCaliberCannon", 0);
-        ammo.Add("highCaliberCannon", 0);
-        ammo.Add("grenade", 0);
+        ammo.Add(AmmoTypes.pistol, 0);
+        ammo.Add(AmmoTypes.rifle, 0);
+        ammo.Add(AmmoTypes.hmg, 0);
+        ammo.Add(AmmoTypes.rocket, 0);
+        ammo.Add(AmmoTypes.guidedMissle, 0);
+        ammo.Add(AmmoTypes.autocannon, 0);
+        ammo.Add(AmmoTypes.lowCaliberCannon, 0);
+        ammo.Add(AmmoTypes.highCaliberCannon, 0);
+        ammo.Add(AmmoTypes.grenade, 0);
 
-        resources.Add("fuel", 0);
-        resources.Add("food", 0);
-        resources.Add("water", 0);
-        resources.Add("medical", 0);
-        resources.Add("scrap", 0);
+        resources.Add(ResourceTypes.fuel, 0);
+        resources.Add(ResourceTypes.food, 0);
+        resources.Add(ResourceTypes.water, 0);
+        resources.Add(ResourceTypes.medical, 0);
+        resources.Add(ResourceTypes.scrap, 0);
 
         
     }
 	
+    public virtual void ChangeAmmoAmount(AmmoTypes type, int amount)
+    {
+        if(ammo.ContainsKey(type))
+        {
+            ammo[type] += amount;
+        }
+        else
+        {
+            print("ammo type not found, something wrong with inventory");
+        }
+    }
+
+    public virtual void ChangeResourceAmount(ResourceTypes type, int amount)
+    {
+        if(resources.ContainsKey(type))
+        {
+            resources[type] += amount;
+        }
+        else
+        {
+            print("resource type not found, something wrong with inventory");
+        }
+    }
 	// Update is called once per frame
 	void Update () {
 	

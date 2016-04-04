@@ -8,7 +8,6 @@ public class Party : MonoBehaviour {
     // Use this for initialization
     void Start () {
         inventory = GetComponent<Inventory>();
-        print("does this work?");
     }
 	
 	// Update is called once per frame

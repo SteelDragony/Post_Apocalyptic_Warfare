@@ -11,10 +11,10 @@ public class PlayerParty : Party {
 	
 	}
 
-    public void Encounter(List<string> dialogueTexts, List<DialogueOption> dialogueOptions)
+    public void Encounter(string encounterText, List<DialogueOption> dialogueOptions)
     {
+        Dialogue.dialogueText.text = encounterText;
         Dialogue.gameObject.SetActive(true);
-        Dialogue.SetDialogueText(dialogueTexts[0]);
         foreach (DialogueOption option in dialogueOptions)
         {
             Dialogue.AddDialogueOption(option);
