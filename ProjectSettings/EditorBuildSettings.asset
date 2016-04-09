@@ -6,8 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/WorldMap.unity
+    path: Assets/Scenes/WorldMapContinue.unity
   - enabled: 1
     path: Assets/Scenes/CombatMap.unity
+  - enabled: 1
+    path: Assets/Scenes/WorldMapInitialise.unity
   - enabled: 0
     path: Assets/Scenes/Multiplayer test.unity

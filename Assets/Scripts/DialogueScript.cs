@@ -9,6 +9,7 @@ public class DialogueScript : MonoBehaviour {
     public Text dialogueText;
     public PlayerParty playerParty;
     public GameManager gameManager;
+    public GameObject encounteredObject;
     public List<Button> buttons;
 
 	// Use this for initialization
@@ -59,7 +60,12 @@ public class DialogueScript : MonoBehaviour {
             gameObject.SetActive(false);
             if(dialogueOption.startCombat)
             {
-                gameManager.EnterCombatMap(playerParty.units, playerParty.units);
+                AIParty encounteredParty;
+                encounteredParty = encounteredObject.GetComponent<AIParty>();
+                if(encounteredParty)
+                {
+                    gameManager.EnterCombatMap(playerParty, encounteredParty);
+                }
             }
         }
     }
