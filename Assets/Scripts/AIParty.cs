@@ -11,6 +11,9 @@ public class AIParty : Party {
     {
         print(other.name);
         PlayerParty encounter = other.gameObject.GetComponentInParent<PlayerParty>();
-        encounter.Encounter(encounterText, dialogueOptions);
+        if (encounter)
+        {
+            encounter.Encounter(encounterText, dialogueOptions, gameObject);
+        }
     }
 }

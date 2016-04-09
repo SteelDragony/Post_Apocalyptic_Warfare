@@ -207,6 +207,7 @@ Transform:
   - {fileID: 2098164231}
   - {fileID: 877212194}
   - {fileID: 2090660927}
+  - {fileID: 1909529840}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &213905407 stripped
@@ -239,7 +240,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 213905407}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: .5
   m_Height: 1
@@ -1240,6 +1241,46 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d53290a3815e03d4295badc5682db742, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1299363271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1299363273}
+  - 114: {fileID: 1299363272}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1299363272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299363271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1535d6cab6629c4f96ce4bc7ab52350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistentWorldMap: {fileID: 194471493}
+--- !u!4 &1299363273
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299363271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 241.699997, y: .399999976, z: 260.700012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &1334127577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,7 +1396,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammonution: 0
   inventory: {fileID: 0}
-  units: []
+  units:
+  - {fileID: 120250, guid: c64f3fb1001ac5e429cf46270630de5e, type: 2}
+  - {fileID: 120250, guid: c64f3fb1001ac5e429cf46270630de5e, type: 2}
+  - {fileID: 119146, guid: 10550c416bbea1a49b7050ad22cc90d1, type: 2}
+  - {fileID: 119146, guid: 10550c416bbea1a49b7050ad22cc90d1, type: 2}
   Dialogue: {fileID: 1760493303}
 --- !u!114 &1334127583
 MonoBehaviour:
@@ -1393,7 +1438,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1374608942}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: .5
   m_Height: 1
@@ -1451,26 +1496,31 @@ MonoBehaviour:
     dialogueText: You found some ammo
     ammoReward: 0
     numberOfDialogue: 1
+    startCombat: 0
     dialogueOptions:
     - buttonText: Done
       dialogueText: You found some ammo
       ammoReward: 2
       numberOfDialogue: 0
+      startCombat: 0
       dialogueOptions: []
   - buttonText: Scavenge South
     dialogueText: You found Fricking nothing!
     ammoReward: 0
     numberOfDialogue: 1
+    startCombat: 0
     dialogueOptions:
     - buttonText: Done
       dialogueText: You found nothing
       ammoReward: 0
       numberOfDialogue: 0
+      startCombat: 0
       dialogueOptions: []
   - buttonText: Go Away
     dialogueText: You found some ammo
     ammoReward: 0
     numberOfDialogue: 0
+    startCombat: 0
     dialogueOptions: []
   numberOfDialogue: 3
 --- !u!23 &1390466902
@@ -1892,6 +1942,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 11435032, guid: 44df189bc3d185d42baf02569f7d6018, type: 2}
   dialogueText: {fileID: 943827875}
   playerParty: {fileID: 1334127582}
+  gameManager: {fileID: 1299363272}
   buttons: []
 --- !u!114 &1760493304
 MonoBehaviour:
@@ -1960,26 +2011,31 @@ MonoBehaviour:
     dialogueText: You found some ammo
     ammoReward: 0
     numberOfDialogue: 1
+    startCombat: 0
     dialogueOptions:
     - buttonText: Done
       dialogueText: You found some ammo
       ammoReward: 2
       numberOfDialogue: 0
+      startCombat: 0
       dialogueOptions: []
   - buttonText: Scavenge South
     dialogueText: You found Fricking nothing!
     ammoReward: 0
     numberOfDialogue: 1
+    startCombat: 0
     dialogueOptions:
     - buttonText: Done
       dialogueText: You found nothing
       ammoReward: 0
       numberOfDialogue: 0
+      startCombat: 0
       dialogueOptions: []
   - buttonText: Go Away
     dialogueText: You found some ammo
     ammoReward: 0
     numberOfDialogue: 0
+    startCombat: 0
     dialogueOptions: []
   numberOfDialogue: 3
 --- !u!4 &1838354064 stripped
@@ -2081,6 +2137,33 @@ Canvas:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 1c25d1b0199d8b442bb9bdd294f16011, type: 3}
   m_PrefabInternal: {fileID: 148935529}
+--- !u!1 &1909529839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1909529840}
+  m_Layer: 0
+  m_Name: Waypoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1909529840
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909529839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.92999983, y: 13.3331299, z: -25.6499996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 194471494}
+  m_RootOrder: 13
 --- !u!1 &2066219431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,6 +2249,7 @@ GameObject:
   - 114: {fileID: 2090660930}
   - 114: {fileID: 2090660929}
   - 114: {fileID: 2090660928}
+  - 136: {fileID: 2090660933}
   m_Layer: 0
   m_Name: AIParty
   m_TagString: Untagged
@@ -2180,7 +2264,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2090660926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.1075439, y: 12.8331299, z: -15.829834}
+  m_LocalPosition: {x: 14.9300003, y: 12.8331299, z: -9.06000042}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1374608943}
@@ -2199,29 +2283,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammonution: 0
   inventory: {fileID: 2090660929}
-  units: []
+  units:
+  - {fileID: 119146, guid: 10550c416bbea1a49b7050ad22cc90d1, type: 2}
+  - {fileID: 119146, guid: 10550c416bbea1a49b7050ad22cc90d1, type: 2}
+  - {fileID: 119146, guid: 10550c416bbea1a49b7050ad22cc90d1, type: 2}
   encounterText: You encounter a part of hostile looking decently armed survivors
   dialogueOptions:
-  - buttonText: 
-    dialogueText: 
+  - buttonText: Fight!
+    dialogueText: You enter in combat
     ammoReward: 0
     numberOfDialogue: 0
+    startCombat: 0
     dialogueOptions:
-    - buttonText: 
+    - buttonText: Give em Hell!
       dialogueText: 
       ammoReward: 0
       numberOfDialogue: 0
-      dialogueOptions:
-      - buttonText: 
-        dialogueText: 
-        ammoReward: 0
-        numberOfDialogue: 0
-        dialogueOptions:
-        - buttonText: 
-          dialogueText: 
-          ammoReward: 0
-          numberOfDialogue: 0
-          dialogueOptions: []
+      startCombat: 1
+      dialogueOptions: []
 --- !u!114 &2090660929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,7 +2354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repathRate: .5
-  target: {fileID: 708889331}
+  target: {fileID: 1909529840}
   canSearch: 1
   canMove: 1
   speed: 3
@@ -2312,6 +2391,19 @@ MonoBehaviour:
     tagsChange: -1
     tagsSet: -1
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!136 &2090660933
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090660926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2098164227
 GameObject:
   m_ObjectHideFlags: 0

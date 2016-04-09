@@ -10,6 +10,7 @@ public class DialogueOption{
     public string dialogueText = "You found some ammo";
     public int ammoReward = 0;
     public int numberOfDialogue = 0;
+    public bool startCombat = false;
     public List<DialogueOption> dialogueOptions = new List<DialogueOption>();
 
     // Use this for initialization

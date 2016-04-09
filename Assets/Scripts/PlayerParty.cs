@@ -11,7 +11,7 @@ public class PlayerParty : Party {
 	
 	}
 
-    public void Encounter(string encounterText, List<DialogueOption> dialogueOptions)
+    public void Encounter(string encounterText, List<DialogueOption> dialogueOptions, GameObject encounteredObject)
     {
         Dialogue.dialogueText.text = encounterText;
         Dialogue.gameObject.SetActive(true);

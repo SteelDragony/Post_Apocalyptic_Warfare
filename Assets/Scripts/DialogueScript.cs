@@ -8,6 +8,7 @@ public class DialogueScript : MonoBehaviour {
     public Button buttonPrefab;
     public Text dialogueText;
     public PlayerParty playerParty;
+    public GameManager gameManager;
     public List<Button> buttons;
 
 	// Use this for initialization
@@ -56,6 +57,10 @@ public class DialogueScript : MonoBehaviour {
         {
             Time.timeScale = 1;
             gameObject.SetActive(false);
+            if(dialogueOption.startCombat)
+            {
+                gameManager.EnterCombatMap(playerParty.units, playerParty.units);
+            }
         }
     }
 }

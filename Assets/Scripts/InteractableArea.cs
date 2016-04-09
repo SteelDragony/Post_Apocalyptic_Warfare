@@ -22,7 +22,7 @@ public class InteractableArea : MonoBehaviour {
     {
         print(other.name);
         PlayerParty encounter = other.gameObject.GetComponentInParent<PlayerParty>();
-        encounter.Encounter(encounterText, dialogueOptions);
+        encounter.Encounter(encounterText, dialogueOptions, gameObject);
     }
 
     public void AddDialogueOption()
