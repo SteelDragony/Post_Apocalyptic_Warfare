@@ -1,15 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WeaponLauncher : MonoBehaviour {
+[RequireComponent(typeof(AudioSource))]
+public class WeaponLauncher : Weapon {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

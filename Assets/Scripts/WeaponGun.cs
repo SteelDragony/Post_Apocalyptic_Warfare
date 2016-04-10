@@ -1,15 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WeaponGun : MonoBehaviour {
+[RequireComponent(typeof(AudioSource))]
+public class WeaponGun : Weapon {
+    public ParticleSystem tracers;
+    void Start()
+    {
+        fireSound = GetComponent<AudioSource>();
+        tracers = GetComponentInChildren<ParticleSystem>();
+    }
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    void Update()
+    {
+
+    }
+
+    public override bool Fire(UnitHealth target)
+    {
+        if(base.Fire(target))
+        {
+            tracers.Emit(1);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }
