@@ -33,6 +33,8 @@ public class Inventory : MonoBehaviour {
     }
     public Dictionary<ResourceTypes, int> resources = new Dictionary<ResourceTypes, int>();
 
+    public List<GameObject> weapons;
+
     // Use this for initialization
     void Start () {
         
