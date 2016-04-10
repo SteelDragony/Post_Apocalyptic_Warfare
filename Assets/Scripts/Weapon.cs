@@ -5,10 +5,11 @@ using System.Collections;
 public class Weapon : MonoBehaviour {
 
     public string name;
+    public string typeDescription;
     public string description;
-    public float weight;
+    public float weightKG;
     public int magazineSize;
-    public int currentMagazine;
+    int currentMagazine;
     public float reloadTime;
     public float fireRate;
     public int range;
@@ -29,6 +30,7 @@ public class Weapon : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         fireSound = GetComponent<AudioSource>();
+        currentMagazine = magazineSize;
 	}
 	
 	// Update is called once per frame
