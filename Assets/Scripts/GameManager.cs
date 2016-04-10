@@ -60,14 +60,14 @@ public class GameManager : MonoBehaviour {
             spawn2 = GameObject.Find("Spawn2").transform.position;
             foreach (GameObject unit in unitsSide1)
             {
-                GameObject spawnedUnit = (GameObject)Instantiate(unit, spawn1, Quaternion.identity);
+                GameObject spawnedUnit = unit.GetComponent<WorldMapUnit>().SpawnOnCombatmap(spawn1);
                 spawnedUnit.GetComponent<UnitHealth>().side = 1;
                 Spawned1.Add(spawnedUnit);
                 
             }
             foreach (GameObject unit in unitsSide2)
             {
-                GameObject spawnedUnit = (GameObject)Instantiate(unit, spawn2, Quaternion.identity);
+                GameObject spawnedUnit = unit.GetComponent<WorldMapUnit>().SpawnOnCombatmap(spawn2);
                 spawnedUnit.GetComponent<UnitHealth>().side = 2;
                 Spawned2.Add(spawnedUnit);
             }

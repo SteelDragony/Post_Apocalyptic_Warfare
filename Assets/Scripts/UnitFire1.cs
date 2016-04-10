@@ -23,7 +23,7 @@ public class UnitFire1 : MonoBehaviour {
 	Light gunLight;
 
 	// unit components
-	public Transform barrelEnd;
+	//public Transform barrelEnd;
 	public GameObject turret;
 	public UnitHealth unitHealth;
 
@@ -115,9 +115,9 @@ public class UnitFire1 : MonoBehaviour {
 	{
 		timer = 0f;
 		gunLight.enabled = true;
-		gunLine.enabled = true;
-		gunLine.SetPosition(0, barrelEnd.transform.position);
-		gunLine.SetPosition(1, target.position);
+		//gunLine.enabled = true;
+		//gunLine.SetPosition(0, barrelEnd.transform.position);
+		//gunLine.SetPosition(1, target.position);
 		UnitHealth targetHealth = target.GetComponent<UnitHealth>();
 
         if(currentShotInBurst < burstLength)
