@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &125212
+--- !u!1 &179046
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 415744}
-  - 198: {fileID: 19845922}
-  - 199: {fileID: 19922988}
+  - 4: {fileID: 436590}
+  - 198: {fileID: 19819998}
+  - 199: {fileID: 19954994}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -17,35 +17,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &137764
+--- !u!1 &180388
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 425668}
-  - 33: {fileID: 3381000}
-  - 23: {fileID: 2361160}
-  - 82: {fileID: 8262920}
-  - 114: {fileID: 11411550}
+  - 4: {fileID: 494360}
+  - 33: {fileID: 3379850}
+  - 23: {fileID: 2339748}
+  - 82: {fileID: 8295316}
+  - 114: {fileID: 11476584}
   m_Layer: 0
-  m_Name: AKM
+  m_Name: Mosin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &173724
+--- !u!1 &190726
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 427152}
-  - 108: {fileID: 10892282}
-  - 120: {fileID: 12037212}
+  - 4: {fileID: 446092}
+  - 108: {fileID: 10814444}
+  - 120: {fileID: 12035840}
   m_Layer: 9
   m_Name: GunMuzzle
   m_TagString: Untagged
@@ -53,55 +53,55 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &415744
+--- !u!4 &436590
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -.00600000005, y: -.595000029, z: .104999997}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 179046}
+  m_LocalRotation: {x: .707106531, y: 4.51691193e-07, z: -8.94069174e-08, w: .707107067}
+  m_LocalPosition: {x: -.0130000003, y: -.635999978, z: .0680000037}
+  m_LocalScale: {x: 4, y: 4, z: 4.00004482}
   m_Children: []
-  m_Father: {fileID: 425668}
+  m_Father: {fileID: 494360}
   m_RootOrder: 0
---- !u!4 &425668
+--- !u!4 &446092
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_GameObject: {fileID: 190726}
+  m_LocalRotation: {x: 3.27825404e-07, y: -1.78813849e-07, z: 5.06639253e-07, w: 1}
+  m_LocalPosition: {x: -.0189999994, y: -.644999981, z: .0680000037}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_Children: []
+  m_Father: {fileID: 494360}
+  m_RootOrder: 1
+--- !u!4 &494360
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180388}
+  m_LocalRotation: {x: -.707106829, y: 5.9604659e-08, z: -2.98023295e-08, w: .707106829}
+  m_LocalPosition: {x: .0780000016, y: .0419999994, z: .0130000003}
   m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_Children:
-  - {fileID: 415744}
-  - {fileID: 427152}
+  - {fileID: 436590}
+  - {fileID: 446092}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &427152
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
-  m_LocalRotation: {x: 1.19209275e-07, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0949999988, y: -.510999978, z: .0340000018}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 425668}
-  m_RootOrder: 1
---- !u!23 &2361160
+--- !u!23 &2339748
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 180388}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 262287d86a1a5964b9517465136a46c8, type: 2}
+  - {fileID: 2100000, guid: 5d8f89f641ee3564391bc450025b8a95, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -115,19 +115,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3381000
+--- !u!33 &3379850
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
-  m_Mesh: {fileID: 4300000, guid: 3efbe29c43c84d344af3216cd5875061, type: 3}
---- !u!82 &8262920
+  m_GameObject: {fileID: 180388}
+  m_Mesh: {fileID: 4300000, guid: 35bc9bf3c026aaf43bc7578bd7f1033b, type: 3}
+--- !u!82 &8295316
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 180388}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -192,12 +192,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!108 &10892282
+--- !u!108 &10814444
 Light:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
+  m_GameObject: {fileID: 190726}
   m_Enabled: 0
   serializedVersion: 6
   m_Type: 2
@@ -224,25 +224,25 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11411550
+--- !u!114 &11476584
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 180388}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6e7a30954aeb4f49b1cba45e89db596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: AKM
-  typeDescription: Assault rifle
-  description: AKM
-  weightKG: 3.20000005
-  magazineSize: 30
-  reloadTime: 3
-  fireRate: 600
-  range: 350
+  name: Mosin-Nagant M91/30
+  typeDescription: Bolt Action Rifle
+  description: Primary ww2 soviet rifle.
+  weightKG: 4
+  magazineSize: 5
+  reloadTime: 4
+  fireRate: 15
+  range: 800
   burstSize: 1
   shotSize: 1
   accuracy: 0
@@ -253,12 +253,12 @@ MonoBehaviour:
   muzzleFlash: {fileID: 0}
   fireSound: {fileID: 0}
   tracers: {fileID: 0}
---- !u!120 &12037212
+--- !u!120 &12035840
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
+  m_GameObject: {fileID: 190726}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -290,12 +290,12 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294967295
   m_UseWorldSpace: 1
---- !u!198 &19845922
+--- !u!198 &19819998
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
+  m_GameObject: {fileID: 179046}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -1343,12 +1343,12 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &19922988
+--- !u!199 &19954994
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
+  m_GameObject: {fileID: 179046}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1387,34 +1387,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
-      propertyPath: typeDescription
-      value: Assault rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: description
-      value: AKM
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: weightKG
-      value: 3.20000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: accuracy
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.x
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.y
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.z
-      value: 3.5
+      propertyPath: fireRate
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 137764}
+  m_RootGameObject: {fileID: 180388}
   m_IsPrefabParent: 1

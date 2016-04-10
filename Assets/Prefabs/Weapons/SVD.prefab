@@ -1,51 +1,34 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &125212
+--- !u!1 &122366
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 415744}
-  - 198: {fileID: 19845922}
-  - 199: {fileID: 19922988}
+  - 4: {fileID: 402828}
+  - 33: {fileID: 3312720}
+  - 23: {fileID: 2366928}
+  - 82: {fileID: 8203320}
+  - 114: {fileID: 11435372}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: SVD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &137764
+--- !u!1 &188588
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 425668}
-  - 33: {fileID: 3381000}
-  - 23: {fileID: 2361160}
-  - 82: {fileID: 8262920}
-  - 114: {fileID: 11411550}
-  m_Layer: 0
-  m_Name: AKM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &173724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 427152}
-  - 108: {fileID: 10892282}
-  - 120: {fileID: 12037212}
+  - 4: {fileID: 432966}
+  - 108: {fileID: 10870266}
+  - 120: {fileID: 12016924}
   m_Layer: 9
   m_Name: GunMuzzle
   m_TagString: Untagged
@@ -53,55 +36,72 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &415744
+--- !u!1 &188862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 401418}
+  - 198: {fileID: 19865838}
+  - 199: {fileID: 19910828}
+  m_Layer: 0
+  m_Name: Particle System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &401418
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -.00600000005, y: -.595000029, z: .104999997}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 188862}
+  m_LocalRotation: {x: .707106471, y: 4.88944124e-07, z: 0, w: .707107127}
+  m_LocalPosition: {x: -.00600000005, y: -.825999975, z: .0579999983}
+  m_LocalScale: {x: 171.501266, y: 171.500992, z: 171.504944}
   m_Children: []
-  m_Father: {fileID: 425668}
+  m_Father: {fileID: 402828}
   m_RootOrder: 0
---- !u!4 &425668
+--- !u!4 &402828
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 122366}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalPosition: {x: .000934032607, y: .0265732389, z: .00795205776}
   m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_Children:
-  - {fileID: 415744}
-  - {fileID: 427152}
+  - {fileID: 401418}
+  - {fileID: 432966}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &427152
+--- !u!4 &432966
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
-  m_LocalRotation: {x: 1.19209275e-07, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0949999988, y: -.510999978, z: .0340000018}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 188588}
+  m_LocalRotation: {x: 9.8347607e-07, y: -2.83121892e-07, z: 7.15255339e-07, w: 1}
+  m_LocalPosition: {x: -.00600000005, y: -.825999975, z: .0579999983}
+  m_LocalScale: {x: 171.500778, y: 171.500687, z: 171.500717}
   m_Children: []
-  m_Father: {fileID: 425668}
+  m_Father: {fileID: 402828}
   m_RootOrder: 1
---- !u!23 &2361160
+--- !u!23 &2366928
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 122366}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 262287d86a1a5964b9517465136a46c8, type: 2}
+  - {fileID: 2100000, guid: c66faf48671de28498b28f6170356e3b, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -115,19 +115,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3381000
+--- !u!33 &3312720
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
-  m_Mesh: {fileID: 4300000, guid: 3efbe29c43c84d344af3216cd5875061, type: 3}
---- !u!82 &8262920
+  m_GameObject: {fileID: 122366}
+  m_Mesh: {fileID: 4300000, guid: ab4b801ca099ded4eba226a206bb653a, type: 3}
+--- !u!82 &8203320
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 122366}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -192,12 +192,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!108 &10892282
+--- !u!108 &10870266
 Light:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
+  m_GameObject: {fileID: 188588}
   m_Enabled: 0
   serializedVersion: 6
   m_Type: 2
@@ -224,25 +224,25 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11411550
+--- !u!114 &11435372
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 122366}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6e7a30954aeb4f49b1cba45e89db596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: AKM
-  typeDescription: Assault rifle
-  description: AKM
-  weightKG: 3.20000005
-  magazineSize: 30
+  name: SVD Dragunov
+  typeDescription: Semi-Auto Sniper
+  description: Primary Soviet sniper rilfe
+  weightKG: 4.30000019
+  magazineSize: 10
   reloadTime: 3
-  fireRate: 600
-  range: 350
+  fireRate: 30
+  range: 1200
   burstSize: 1
   shotSize: 1
   accuracy: 0
@@ -253,12 +253,12 @@ MonoBehaviour:
   muzzleFlash: {fileID: 0}
   fireSound: {fileID: 0}
   tracers: {fileID: 0}
---- !u!120 &12037212
+--- !u!120 &12016924
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
+  m_GameObject: {fileID: 188588}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -290,12 +290,12 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294967295
   m_UseWorldSpace: 1
---- !u!198 &19845922
+--- !u!198 &19865838
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
+  m_GameObject: {fileID: 188862}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -1343,12 +1343,12 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &19922988
+--- !u!199 &19910828
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
+  m_GameObject: {fileID: 188862}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1385,36 +1385,8 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: typeDescription
-      value: Assault rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: description
-      value: AKM
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: weightKG
-      value: 3.20000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: accuracy
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.x
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.y
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.z
-      value: 3.5
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 137764}
+  m_RootGameObject: {fileID: 122366}
   m_IsPrefabParent: 1

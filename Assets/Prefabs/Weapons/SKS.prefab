@@ -1,51 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &125212
+--- !u!1 &105788
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 415744}
-  - 198: {fileID: 19845922}
-  - 199: {fileID: 19922988}
-  m_Layer: 0
-  m_Name: Particle System
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &137764
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 425668}
-  - 33: {fileID: 3381000}
-  - 23: {fileID: 2361160}
-  - 82: {fileID: 8262920}
-  - 114: {fileID: 11411550}
-  m_Layer: 0
-  m_Name: AKM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &173724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 427152}
-  - 108: {fileID: 10892282}
-  - 120: {fileID: 12037212}
+  - 4: {fileID: 443862}
+  - 108: {fileID: 10813612}
+  - 120: {fileID: 12031534}
   m_Layer: 9
   m_Name: GunMuzzle
   m_TagString: Untagged
@@ -53,55 +17,91 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &415744
+--- !u!1 &133808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 410764}
+  - 33: {fileID: 3346024}
+  - 23: {fileID: 2393990}
+  - 82: {fileID: 8264360}
+  - 114: {fileID: 11400954}
+  m_Layer: 0
+  m_Name: SKS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &178716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 467046}
+  - 198: {fileID: 19811736}
+  - 199: {fileID: 19927974}
+  m_Layer: 0
+  m_Name: Particle System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &410764
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -.00600000005, y: -.595000029, z: .104999997}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 425668}
-  m_RootOrder: 0
---- !u!4 &425668
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_GameObject: {fileID: 133808}
+  m_LocalRotation: {x: -.707106829, y: -6.18172464e-08, z: -6.18172464e-08, w: .707106829}
+  m_LocalPosition: {x: 3.95033481e-08, y: .0682526603, z: -.00592322741}
   m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_Children:
-  - {fileID: 415744}
-  - {fileID: 427152}
+  - {fileID: 443862}
+  - {fileID: 467046}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!4 &427152
+--- !u!4 &443862
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
-  m_LocalRotation: {x: 1.19209275e-07, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0949999988, y: -.510999978, z: .0340000018}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 105788}
+  m_LocalRotation: {x: 8.04662307e-07, y: -3.57627698e-07, z: 8.79168113e-07, w: 1}
+  m_LocalPosition: {x: -.00600000005, y: -.612999976, z: .0359999985}
+  m_LocalScale: {x: 171.500626, y: 171.500534, z: 171.500565}
   m_Children: []
-  m_Father: {fileID: 425668}
+  m_Father: {fileID: 410764}
+  m_RootOrder: 0
+--- !u!4 &467046
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178716}
+  m_LocalRotation: {x: .707106471, y: 5.76488446e-07, z: 8.94069316e-08, w: .707107186}
+  m_LocalPosition: {x: -.00600000005, y: -.612999976, z: .0359999985}
+  m_LocalScale: {x: 171.501022, y: 171.500793, z: 171.504486}
+  m_Children: []
+  m_Father: {fileID: 410764}
   m_RootOrder: 1
---- !u!23 &2361160
+--- !u!23 &2393990
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 133808}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 262287d86a1a5964b9517465136a46c8, type: 2}
+  - {fileID: 2100000, guid: 17fe087147ddf1a43be940cf79effe42, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -115,19 +115,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3381000
+--- !u!33 &3346024
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
-  m_Mesh: {fileID: 4300000, guid: 3efbe29c43c84d344af3216cd5875061, type: 3}
---- !u!82 &8262920
+  m_GameObject: {fileID: 133808}
+  m_Mesh: {fileID: 4300000, guid: 2045ed8462d3e75408336dfa89825a6f, type: 3}
+--- !u!82 &8264360
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 133808}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -192,12 +192,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!108 &10892282
+--- !u!108 &10813612
 Light:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
+  m_GameObject: {fileID: 105788}
   m_Enabled: 0
   serializedVersion: 6
   m_Type: 2
@@ -224,25 +224,25 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11411550
+--- !u!114 &11400954
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137764}
+  m_GameObject: {fileID: 133808}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6e7a30954aeb4f49b1cba45e89db596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: AKM
-  typeDescription: Assault rifle
-  description: AKM
-  weightKG: 3.20000005
-  magazineSize: 30
+  name: SKS
+  typeDescription: Semi Auto Rifle
+  description: Soviet designed rifle
+  weightKG: 3.8499999
+  magazineSize: 10
   reloadTime: 3
-  fireRate: 600
-  range: 350
+  fireRate: 40
+  range: 400
   burstSize: 1
   shotSize: 1
   accuracy: 0
@@ -253,12 +253,12 @@ MonoBehaviour:
   muzzleFlash: {fileID: 0}
   fireSound: {fileID: 0}
   tracers: {fileID: 0}
---- !u!120 &12037212
+--- !u!120 &12031534
 LineRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173724}
+  m_GameObject: {fileID: 105788}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -290,12 +290,12 @@ LineRenderer:
       serializedVersion: 2
       rgba: 4294967295
   m_UseWorldSpace: 1
---- !u!198 &19845922
+--- !u!198 &19811736
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
+  m_GameObject: {fileID: 178716}
   lengthInSec: 5
   startDelay: 0
   speed: 1
@@ -1343,12 +1343,12 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &19922988
+--- !u!199 &19927974
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125212}
+  m_GameObject: {fileID: 178716}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1385,36 +1385,8 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: typeDescription
-      value: Assault rifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: description
-      value: AKM
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: weightKG
-      value: 3.20000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: accuracy
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.x
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.y
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_LocalScale.z
-      value: 3.5
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 137764}
+  m_RootGameObject: {fileID: 133808}
   m_IsPrefabParent: 1
