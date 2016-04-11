@@ -6,10 +6,36 @@ ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Turret
+    100004: Wheel_b_L
+    100006: Wheel_b_R
+    100008: Wheel_F_L
+    100010: Wheel_F_R
     400000: //RootNode
+    400002: Turret
+    400004: Wheel_b_L
+    400006: Wheel_b_R
+    400008: Wheel_F_L
+    400010: Wheel_F_R
     2300000: //RootNode
+    2300002: Turret
+    2300004: Wheel_b_L
+    2300006: Wheel_b_R
+    2300008: Wheel_F_L
+    2300010: Wheel_F_R
     3300000: //RootNode
+    3300002: Turret
+    3300004: Wheel_b_L
+    3300006: Wheel_b_R
+    3300008: Wheel_F_L
+    3300010: Wheel_F_R
     4300000: front
+    4300002: Vehicle
+    4300004: Wheel_b_L
+    4300006: Wheel_F_R
+    4300008: Wheel_F_L
+    4300010: Wheel_b_R
+    4300012: Turret
     9500000: //RootNode
   materials:
     importMaterials: 1
