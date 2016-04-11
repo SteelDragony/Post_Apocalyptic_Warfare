@@ -4,7 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(AudioSource))]
 public class Weapon : MonoBehaviour {
 
-    public string name;
+    public string weaponName;
     public string typeDescription;
     public string description;
     public float weightKG;

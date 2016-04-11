@@ -7,7 +7,7 @@ public class WorldMapUnit : MonoBehaviour {
     public GameObject combatMapSpawnedUnitReference;
     public InventoryWeapon weapon;
 
-    public string name;
+    public string unitName;
     public string ocupation;
     public string nationality;
     public string backgroundStory;
