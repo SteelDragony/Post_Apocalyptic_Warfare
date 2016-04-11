@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e7a30954aeb4f49b1cba45e89db596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: AK-74
+  weaponName: AK-74
   typeDescription: Assault rifle
   description: Primary soviet rifle from before the nukes.
   weightKG: 3
@@ -1409,6 +1409,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: weaponName
+      value: AK-74
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

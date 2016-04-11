@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e7a30954aeb4f49b1cba45e89db596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Mosin-Nagant M91/30
+  weaponName: Mosin-Nagant m91/30
   typeDescription: Bolt Action Rifle
   description: Primary ww2 soviet rifle.
   weightKG: 4
@@ -1389,6 +1389,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fireRate
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: weaponName
+      value: Mosin-Nagant m91/30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

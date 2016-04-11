@@ -235,9 +235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e7a30954aeb4f49b1cba45e89db596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: "VZ. 61 \u0160korpion"
+  weaponName: "VZ. 61 \u0160korpion"
   typeDescription: SMG
-  description: SMG fromSMG from Czechoslovakia
+  description: SMG from Czechoslovakia
   weightKG: 1.29999995
   magazineSize: 20
   reloadTime: 3
@@ -1385,7 +1385,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: weaponName
+      value: "VZ. 61 \u0160korpion"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: description
+      value: SMG from Czechoslovakia
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: BypassListenerEffects
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 162692}

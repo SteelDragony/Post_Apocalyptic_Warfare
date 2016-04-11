@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 414140}
   - 114: {fileID: 11438022}
   m_Layer: 0
-  m_Name: InventoryWeapon
+  m_Name: InventoryAKS74u
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,14 +39,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f56e4fc1e850344bc9b8f2370a3e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 195872, guid: eeea1dce72e9abe48bbca4ea8ece05ea, type: 2}
+  weaponPrefab: {fileID: 103720, guid: 8d2d4fbb1db4de74399d6f59151bd572, type: 2}
+  weaponName: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: weaponPrefab
+      value: 
+      objectReference: {fileID: 103720, guid: 8d2d4fbb1db4de74399d6f59151bd572, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 133578}

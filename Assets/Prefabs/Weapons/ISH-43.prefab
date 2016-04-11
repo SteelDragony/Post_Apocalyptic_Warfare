@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e7a30954aeb4f49b1cba45e89db596, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: ISH-43
+  weaponName: ISH-43
   typeDescription: Double barrel shotgun
   description: Russian hunting shotgun produced during and after the 2nd world war.
   weightKG: 3.5
@@ -1393,6 +1393,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: fireRate
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: weaponName
+      value: ISH-43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
